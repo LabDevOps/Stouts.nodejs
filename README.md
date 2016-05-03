@@ -1,9 +1,9 @@
-```
+
 Package Installation
 ```sh
 ansible-playbook -i hosts test-pkg.yml --verbose
 ```
-```
+
 ```
 Stouts.nodejs
 =============
