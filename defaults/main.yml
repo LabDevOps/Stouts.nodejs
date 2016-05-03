@@ -6,7 +6,7 @@ nodejs_major_version: 5.x                 # This will determine the repo from no
 nodejs_install: pkg                       # Install nodejs from packages, sources or binary
                                           # (pkg|src|bin)
 
-nodejs_npm_modules: []                    # List modules which will be installed
+nodejs_npm_modules: [grunt-cli]                    # List modules which will be installed
 
 nodejs_home: /usr/lib/nodejs              # The directory where nodejs will be installed
 nodejs_src_url: "http://nodejs.org/dist/v{{nodejs_version}}/node-v{{nodejs_version}}.tar.gz"

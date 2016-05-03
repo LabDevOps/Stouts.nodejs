@@ -1,0 +1,7 @@
+---
+  handlers:
+  - name: yum update
+    shell: "yum update"
+    become: yes
+    become_method: sudo
+

@@ -1,8 +1,18 @@
 ---
 
-- name: Install nodejs
+- name: set yum repository for the epel
+  yum: name=http://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+  notify: yum update
+  become: yes
+  become_method: sudo
+
+- name: Install nodejs on Yum system
   yum: name=nodejs
+  become: yes
+  become_method: sudo
 
 - name: Install npm
   yum: name=npm
+  become: yes
+  become_method: sudo
 
